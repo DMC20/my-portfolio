@@ -1,8 +1,20 @@
 /* font-family: 'Roboto', sans-serif; */
+:root {
+    --primary-color:#21130d;
+    --secondary-color:#191970;
+    --tiertary-color:#f0f8ff;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    columns: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 header {
@@ -14,10 +26,47 @@ header {
     top: 0;
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
     background-image: url(../my-portfolio/images/code.jpeg);
     background-size: cover;
-    background-position: 80%;
+    background-position: 40%;
     background-attachment: fixed;
     z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color:var(--tiertary-color);
+    margin: 0;
+    text-shadow: 0 0 10px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
 }
