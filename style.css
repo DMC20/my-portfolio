@@ -1,21 +1,23 @@
-/* font-family: 'Roboto', sans-serif; */
 :root {
     --primary-color:#21130d;
-    --secondary-color:#191970;
+    --secondary-color:#236b8e;
     --tiertary-color:#f0f8ff;
 }
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
+/* Header/nav section */
 body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--tiertary-color);
     font-family: Arial, Helvetica, sans-serif;
-    columns: var(--primary-color);
-    background-color: var(--secondary-color);
-}
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 
 header {
     padding: 20px 35px;
@@ -43,10 +45,14 @@ header h1 {
 
 header a {
     text-decoration: none;
+    color: var(--tiertary-color);
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
 }
 
 header nav {
-    margin: 7px 0;
+    margin: 6px 0;
 }
 
 header nav ul {
@@ -55,18 +61,122 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    margin: 0;
+    font-weight: bold;
 }
 
 header nav ul li a {
     padding: 10px 15px;
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 10px;
+}
+/* header nav section ends */
+/* about me section */
+.me p {
+    line-height: 1.7;
+    color: var(--tertiary-color);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+.about-myself {
+    font-size: 48px;
+    color: var(--primary-color);
+    border-bottom: 3px solid;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
 }
 
-header nav ul li a:hover {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    border-radius: 15px;
-    text-shadow: none;
+.myself {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.myself img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    float: right;
+    display:block;
+    flex-wrap: wrap;
+    border: none;
+}
+
+.primary-border {
+    border-color: var(--primary-color);
+}
+/* about me ends */
+/* my work section */
+
+.portfolio {
+    background-color: var(--secondary-color);
+ 
+}
+
+.portfolio h2 {
+    color: var(--tiertary-color);
+    padding: 0px 10px 20px;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.flex-item {
+    width: 45%;
+    border-radius: 14px;
+    border: 4px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    background-image: url(./images/run-buddy.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-items {
+    width: 45%;
+    border-radius: 14px;
+    border: 4px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    background-image: url(./images/coming-soon.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item span {
+    margin-top: auto;
+    width: 100%;
+    background-color: none;
+    color: var(--tiertary-color);
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.flex-items span {
+    margin-top: auto;
+    width: 100%;
+    background-color: none;
+    color: var(--tiertary-color);
+    padding: 10px 5px;
+    text-align: center;
 }
