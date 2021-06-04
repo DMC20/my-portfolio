@@ -39,7 +39,7 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 45px;
     color:var(--tiertary-color);
     margin: 0;
     text-shadow: 0 0 10px;
@@ -94,7 +94,7 @@ header nav ul li a:hover {
 h2 {
     text-shadow: 0 0 20px;
     padding: 20px 0;
-    font-size: 30px;
+    font-size: 40px;
     color: var(--secondary-color);
 }
 p {
@@ -131,66 +131,38 @@ main h2 {
 
 .flex-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
 }
+
+#run-buddy {
+    background-image: url(./images/run-buddy.png);
+}
+
+#coming-soon {
+    background-image: url(./images/coming-soon.jpeg);
+}
+
 
 .flex-item {
     width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
     border-radius: 20px;
     border: 8px solid var(--primary-color);
     background-color: var(--secondary-color);
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 15px;
-    margin-left: 10px;
-    background-image: url(./images/run-buddy.png);
     background-size: cover;
     background-position: center;
     padding: 20px 20px;
     min-height: 250px;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
-.flex-items {
-    width: 48%;
-    border-radius: 20px;
-    border: 8px solid var(--primary-color);
-    background-color: var(--secondary-color);
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    margin-left: 10px;
-    background-image: url(./images/coming-soon.jpeg);
-    background-size: cover;
-    background-position: center;
-    padding: 20px 20px;
-    min-height: 250px;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.flex-item span {
-    width: 100%;
-    background-color: none;
-    color: var(--tiertary-color);
-    padding: 20px 5px;
-    text-align: center;
-}
-
-.flex-items span {
-    width: 100%;
-    background-color: none;
-    color: var(--tiertary-color);
-    padding: 20px 5px;
-    text-align: center;
-}
-
-.flex-item:hover {
+.flex-item:hover { 
     opacity: .5;
     color: var(--secondary-color);
     border-radius: 15px;
@@ -203,6 +175,9 @@ main h2 {
     text-shadow: none;
 }
 
+.flex-item a:link {
+    color: var(--tiertary-color);
+}
 
 /* my work section ends */
 
@@ -214,8 +189,6 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: sticky;
-    position: -webkit-sticky;
     background-image: url(../my-portfolio/images/code.jpeg);
     background-size: cover;
     background-position: 40%;
