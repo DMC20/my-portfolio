@@ -23,6 +23,7 @@ body {
   }
 
 header {
+    background-image: url(./images/code.jpeg);
     padding: 20px 20px;
     display: flex;
     justify-content: space-between;
@@ -30,7 +31,6 @@ header {
     position: sticky;
     top: 0;
     position: -webkit-sticky;
-    background-image: url(../my-portfolio/images/code.jpeg);
     background-size: cover;
     background-position: 40%;
     background-attachment: fixed;
@@ -138,6 +138,10 @@ main h2 {
 
 #run-buddy {
     background-image: url(./images/run-buddy.png);
+}
+
+#nightcap-events {
+    background-image: url(./images/nightcap.jpeg);
 }
 
 #coming-soon {
