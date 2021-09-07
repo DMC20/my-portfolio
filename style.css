@@ -144,6 +144,10 @@ main h2 {
     background-image: url(./images/nightcap.jpeg);
 }
 
+#justask {
+    background-image: url(./images/justask.png);
+}
+
 #coming-soon {
     background-image: url(./images/coming-soon.jpeg);
 }
